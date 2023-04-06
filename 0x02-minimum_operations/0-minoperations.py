@@ -14,4 +14,4 @@ def minOperations(n):
             operation_count = operation_count + minimum_operation
             n = n / minimum_operation
         minimum_operation = minimum_operation + 1
-        return operation_count
+   return operation_count
