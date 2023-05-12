@@ -4,7 +4,7 @@
 import sys
 
 
-if__name__ == '__main__':
+if __name__ == '__main__':
   code = sys.argv
   if len(code) != 2:
     print("Usage: nqueens N")
