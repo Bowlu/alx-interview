@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-"""Rotating a two-dimensional matrix 90degress clockwise"""
+"""
+Rotating a two-dimensional matrix 90degress clockwise
+"""
+
 
 def rotate_2d_matrix(matrix):
     matrixLength = len(matrix)
