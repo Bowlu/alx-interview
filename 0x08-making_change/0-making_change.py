@@ -4,13 +4,21 @@
 to meet a given amount total"""
 
 def makeChange(coins, total):
-  coinValues = [float('inf')] * (total + 1)
-  coinValues[0] = 0
+ if total <= 0
+    return 0
+
+  coinValue = 0
+  usedCoin = 0
+  currentTotal = total
+  sortedCoin = sorted(coins, reverse=True)
+  coinLength = len(coins)
   
-  for eachCoin in coins:
-    for i in range(eachCoin, total + 1):
-      coinValues[i] = min(coinValues[i], coinValues[i - eachCoin] + 1)
-      
-  if coinValues[total] == float('inf'):
-    return -1
-  return coinValues[total]
+  while currentTotal > 0:
+    if usedCoin >= coinLength:
+      return -1
+    if currentTotal - sortedCoin[usedCoin] >= 0:
+      currentTotal = currentTotal - sortedCoin[usedCoin]
+      coinValue = coinValue + 1
+    else:
+      usedCoin = usedCoin + 1
+  return coinValue
